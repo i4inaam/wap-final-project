@@ -1,0 +1,46 @@
+body{
+    margin:0%;
+    padding: 0%;
+    background: linear-gradient(rgb(117, 203, 222), rgb(161, 122, 155));
+    background-repeat: no-repeat;
+    height: 721px;
+}
+form{
+    border-bottom: 1px rgb(98, 145, 151) solid;
+}
+img{
+    padding-left: 30px;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+}
+form div{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+label{
+    margin-left: 15px;
+    font-size: 22px;
+}
+input{
+    padding: 5px 5px 5px 10px ;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 18px;
+}
+button{
+    margin-left: 15px;
+    background-color: rgb(65, 158, 169);
+    font-size: 22px;
+    border-radius: 10px;
+}
+button:hover{
+background-color: rgb(60, 134, 146);
+}
+p{
+    text-align: center;
+}
+h1{
+    color:rgb(3, 0, 6);
+}

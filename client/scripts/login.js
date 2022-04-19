@@ -14,17 +14,18 @@
 // }
 window.onload = function(){
     document.getElementById('loginBtn').onclick = async function () {
+        const username = document.getElementById('uname').value;
+        const password = document.getElementById('password').value;
         let result = await fetch('http://localhost:8000/users/', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
             },
-            body: JSON.stringify({
-               username: document.getElementById('uname').value,
-               password: document.getElementById('password').value
-            })
+            body: JSON.stringify({username, password})
         }).then(res => res.json());
+
         console.log(result.username, result.password);
+
         if(result.username === username && result.password === password){
             window.location.href = "./client/homePage.html";
         }

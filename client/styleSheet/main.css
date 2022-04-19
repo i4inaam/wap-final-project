@@ -4,7 +4,7 @@ body{
     background: linear-gradient(rgb(159, 197, 206), rgb(209, 164, 198));
     height: 721px;
 }
-#outer-div{
+#header{
     border-bottom: 1px rgb(98, 145, 151) solid;
 }
 img{
@@ -42,5 +42,19 @@ p{
     text-align: center;
 }
 h1{
+    text-align: center;
+}
+
+/*Home Page*/
+
+table{
+    border: 3px solid rgb(149, 104, 104);
+    background: -moz-linear-gradient(rgb(231, 186, 186),rgb(185, 244, 185));
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+h2{
     text-align: center;
 }

@@ -11,12 +11,15 @@ let users = [{
 ];
 
 module.exports = class User{
+    
     static findUser(user){
         const index = users.findIndex (u => u.username == user.username && u.password == user.password); 
-       if( index > -1)
-            return users[index];
+       if( index > -1){
+
+        return users[index].username + Date.now();
+       }
        else{
-       throw new error("NOT Found");
+       return null;
        }
     }
 

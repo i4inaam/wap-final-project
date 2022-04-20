@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,22 @@
     <title>Home Page</title>
     <link rel="shortcut icon" href="./images/music.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styleSheet/main.css">
+    <script src="./scripts/main.js"></script>
 </head>
+
 <body>
     <div id="header">
         <img src="./images/logo.png" alt="Loading...">
-        <div id="inner-div"><button>Logout</button></div>
+        <div id="inner-div">
+            <label for="search">
+                <input type="text" id="search" placeholder="Search..." >
+            </label><button id="searchBtn">Search</button>
+            <button>Logout</button>
+        </div>
     </div>
     <div id="main">
-        <h2>Songs you may interest</h2>
         <table>
+            <caption id="cap1">Songs you may interest</caption>
             <thead>
                 <tr>
                     <th>ID</th>
@@ -24,10 +32,13 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+            <tbody id="tab1body">
+
+            </tbody>
         </table>
 
-        <h2>Playlists</h2>
         <table>
+            <caption id="caption2">Playlists</caption>
             <thead>
                 <tr>
                     <th>Index</th>
@@ -35,11 +46,11 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+            <tbody>
+
+            </tbody>
         </table>
     </div>
-
-    
-
-
 </body>
+
 </html>

@@ -1,8 +1,8 @@
 body{
     margin:0%;
     padding: 0%;
-    background: linear-gradient(rgb(159, 197, 206), rgb(209, 164, 198));
-    height: 721px;
+    background: linear-gradient(rgb(159, 197, 206), rgb(148, 115, 139));
+    min-height: 721px;
 }
 #header{
     border-bottom: 1px rgb(98, 145, 151) solid;
@@ -67,4 +67,8 @@ th{
 td{
     border: 3px solid rgb(149, 104, 104);
     text-align: center;
+}
+audio{
+    margin:20px 10%;
+    width: 80%;
 }

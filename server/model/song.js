@@ -31,10 +31,46 @@ const songs = [
 
 ];
 
+let playlist = [{
+    uid:3,
+    id:450,
+    title: "Strangers",
+    rdate: "1-2-2022",
+    song: "./audio/music5.mp4",
+},
+{
+    uid:3,
+    id:455,
+    title: "Strangers",
+    rdate: "1-2-2022",
+    song: "./audio/music5.mp4",
+}];
+
 module.exports = class Song{
 
     static getAllSongs(){
         return songs;
+    }
+
+    static getMyPlaylist(userid){
+console.log(userid);
+        const myList = playlist.filter(item => item.uid == userid);
+console.log(myList);
+        return myList;
+    }
+
+    static addSongInPlaylist(request){
+        const index = playlist.findIndex(s => s.uid == request.uid && s.id == request.id );
+        if(index < 0){
+            const findSong = songs.find(s => s.id == request.id);
+            playlist.push({uid : request.uid, id : findSong.id,
+            title : findSong.title, rdate : findSong.rdate,
+            song : findSong.song});
+        }
+    }
+
+    static deleteSongById(uid, sid){
+        playlist = playlist.filter(s => s.uid == uid && s.id != sid);
     }
     
 }

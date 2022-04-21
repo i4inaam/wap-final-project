@@ -8,19 +8,21 @@
     <title>Home Page</title>
     <link rel="shortcut icon" href="./images/music.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styleSheet/main.css">
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/homePage.js"></script>
 </head>
 
 <body>
+    
     <div id="header">
         <img src="./images/logo.png" alt="Loading...">
         <div id="inner-div">
             <label for="search">
                 <input type="text" id="search" placeholder="Search..." >
             </label><button id="searchBtn">Search</button>
-            <button>Logout</button>
+            <button id="logoutBtn">Logout</button>
         </div>
     </div>
+
     <div id="main">
         <table>
             <caption id="cap1">Songs you may interest</caption>
@@ -41,16 +43,18 @@
             <caption id="caption2">Playlists</caption>
             <thead>
                 <tr>
-                    <th>Index</th>
+                    <th>ID</th>
                     <th>Title</th>
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tab2body">
+                
 
             </tbody>
         </table>
     </div>
+    <audio id="musicplayer" controls> </audio>
 </body>
 
 </html>

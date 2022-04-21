@@ -1,7 +1,7 @@
 body{
     margin:0%;
     padding: 0%;
-    background: linear-gradient(rgb(159, 197, 206), rgb(148, 115, 139));
+    background: linear-gradient(rgb(159, 197, 206), rgb(191, 210, 163));
     min-height: 721px;
 }
 #header{
@@ -31,15 +31,16 @@ input{
 }
 button{
     margin-left: 15px;
-    background-color: rgb(65, 158, 169);
+    background-color: rgb(167, 148, 160);
     font-size: 22px;
     border-radius: 10px;
 }
 button:hover{
-background-color: rgb(60, 134, 146);
+    background-color: rgb(200, 81, 166);
 }
 p{
     text-align: center;
+    color: rgb(187, 39, 39);
 }
 h1{
     text-align: center;
@@ -63,12 +64,18 @@ caption{
 }
 th{
     border: 3px solid rgb(149, 104, 104);
+    padding: 5px;
+    font-size: 18px;
 }
 td{
     border: 3px solid rgb(149, 104, 104);
     text-align: center;
+    padding: 5px;
+    font-size: 18px;
 }
 audio{
-    margin:20px 10%;
+    margin:0px 10% 10px 10%;
     width: 80%;
+    display: none;
 }
+

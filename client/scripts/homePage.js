@@ -95,6 +95,8 @@ window.onload = function() {
                 getPlaylist(auth.user.uid);
              });
              playElement.addEventListener('click', function(event) {
+                document.getElementById('currentSong').innerHTML = "Currently playing " + playlistArray[i].title;
+                document.getElementById("musicplayer").style.display = "block";
                 document.getElementById("musicplayer").src=playlistArray[i].song;
              });
         }

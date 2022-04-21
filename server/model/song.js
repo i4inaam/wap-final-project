@@ -31,20 +31,7 @@ const songs = [
 
 ];
 
-let playlist = [{
-    uid:3,
-    id:450,
-    title: "Strangers",
-    rdate: "1-2-2022",
-    song: "./audio/music5.mp4",
-},
-{
-    uid:3,
-    id:455,
-    title: "Strangers",
-    rdate: "1-2-2022",
-    song: "./audio/music5.mp4",
-}];
+let playlist = [];
 
 module.exports = class Song{
 
@@ -53,9 +40,9 @@ module.exports = class Song{
     }
 
     static getMyPlaylist(userid){
-console.log(userid);
+
         const myList = playlist.filter(item => item.uid == userid);
-console.log(myList);
+
         return myList;
     }
 

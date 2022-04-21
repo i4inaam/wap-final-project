@@ -4,12 +4,7 @@ setTimeout("disableBack()", 0);
 window.onload = function() {
 
     const auth = JSON.parse(sessionStorage.getItem("result"));
-    if(auth){
-
-    }
-    else{
-
-    }
+    document.getElementById('logedinuser').innerText = "Welcome " + auth.user.username;
 
     //fetching all songs on window loading
     async function getSongs(){
@@ -130,6 +125,7 @@ window.onload = function() {
            </tr>`;
         }
        document.getElementById('tab1body').innerHTML = rows;
+
        for(let i = 0; i < songArray.length; ++i)
        {
         const addElement = document.getElementById("add"+songArray[i].id);

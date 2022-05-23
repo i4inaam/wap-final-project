@@ -43,9 +43,7 @@ window.onload = function() {
     async function saveSong(userId, songId){
         await fetch('http://localhost:8000/songs/addsongsinplaylist',{
             method: 'POST',
-            headers: {
-                'Content-type': 'application/json',  
-            },
+            headers: { 'Content-type': 'application/json'},
             body: JSON.stringify({
                 uid : userId,
                 id : songId
